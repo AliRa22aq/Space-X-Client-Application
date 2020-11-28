@@ -1,0 +1,74 @@
+[debug] [2020-11-28T16:20:25.705Z] ----------------------------------------------------------------------
+[debug] [2020-11-28T16:20:25.708Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ali Razzaq\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-28T16:20:25.709Z] CLI Version:   8.16.2
+[debug] [2020-11-28T16:20:25.709Z] Platform:      win32
+[debug] [2020-11-28T16:20:25.710Z] Node Version:  v15.3.0
+[debug] [2020-11-28T16:20:25.711Z] Time:          Sat Nov 28 2020 21:20:25 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-11-28T16:20:25.712Z] ----------------------------------------------------------------------
+[debug] [2020-11-28T16:20:25.712Z] 
+[debug] [2020-11-28T16:20:25.726Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-28T16:20:25.727Z] > authorizing via signed-in user
+[debug] [2020-11-28T16:20:25.727Z] [iam] checking project spacex-app-1987e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-28T16:20:25.733Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/spacex-app-1987e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-28T16:20:28.187Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 28 Nov 2020 16:20:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1304","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-28T16:20:28.194Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/spacex-app-1987e  
+ 
+[debug] [2020-11-28T16:20:28.927Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 28 Nov 2020 16:20:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'spacex-app-1987e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-28T16:20:28.951Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/spacex-app-1987e/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-28T16:20:31.842Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 28 Nov 2020 16:20:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[spacex-app-1987e]: beginning deploy... 
+[info] i  hosting[spacex-app-1987e]: found 19 files in build 
+[debug] [2020-11-28T16:20:32.330Z] [hosting] hash cache [YnVpbGQ] stored for 19 files
+[debug] [2020-11-28T16:20:32.330Z] [hosting][hash queue][FINAL] {"max":401,"min":5,"avg":40.578947368421055,"active":0,"complete":19,"success":19,"errored":0,"retried":0,"total":19,"elapsed":413}
+[debug] [2020-11-28T16:20:32.331Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/spacex-app-1987e/versions/de70bed2ebc09221:populateFiles  
+ <request body omitted>
+[debug] [2020-11-28T16:20:34.724Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 28 Nov 2020 16:20:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-28T16:20:34.743Z] [hosting][populate queue][FINAL] {"max":2399,"min":2399,"avg":2399,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2415}
+[debug] [2020-11-28T16:20:34.744Z] [hosting] uploads queued: 13
+[debug] [2020-11-28T16:20:48.767Z] [hosting][upload queue][FINAL] {"max":14041,"min":3026,"avg":4597.846153846154,"active":0,"complete":13,"success":13,"errored":0,"retried":0,"total":13,"elapsed":14042}
+[info] +  hosting[spacex-app-1987e]: file upload complete 
+[debug] [2020-11-28T16:20:48.783Z] [hosting] deploy completed after 16937ms
+[debug] [2020-11-28T16:20:50.855Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "spacex-app-1987e"
+    },
+    "site": "spacex-app-1987e",
+    "version": "sites/spacex-app-1987e/versions/de70bed2ebc09221"
+  }
+]
+[info] i  hosting[spacex-app-1987e]: finalizing version... 
+[debug] [2020-11-28T16:20:50.858Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/spacex-app-1987e/versions/de70bed2ebc09221?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-11-28T16:20:53.756Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 28 Nov 2020 16:20:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-28T16:20:53.756Z] [hosting] finalized version for spacex-app-1987e: {"name":"sites/spacex-app-1987e/versions/de70bed2ebc09221","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-11-28T16:20:30.361923Z","createUser":{"email":"alirazzaquet@gmail.com"},"finalizeTime":"2020-11-28T16:20:53.108008Z","finalizeUser":{"email":"alirazzaquet@gmail.com"}}
+[info] +  hosting[spacex-app-1987e]: version finalized 
+[info] i  hosting[spacex-app-1987e]: releasing new version... 
+[debug] [2020-11-28T16:20:53.760Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/spacex-app-1987e/releases?version_name=sites/spacex-app-1987e/versions/de70bed2ebc09221  
+ {"message":null}
+[debug] [2020-11-28T16:20:55.897Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 28 Nov 2020 16:20:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-28T16:20:55.899Z] [hosting] release: {"name":"sites/spacex-app-1987e/releases/1606580454561565","version":{"name":"sites/spacex-app-1987e/versions/de70bed2ebc09221","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-11-28T16:20:30.361923Z","createUser":{"email":"alirazzaquet@gmail.com"},"finalizeTime":"2020-11-28T16:20:53.108008Z","finalizeUser":{"email":"alirazzaquet@gmail.com"},"preview":{}},"type":"DEPLOY","releaseTime":"2020-11-28T16:20:54.561565704Z","releaseUser":{"email":"alirazzaquet@gmail.com"}}
+[info] +  hosting[spacex-app-1987e]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/spacex-app-1987e/overview
+[info] Hosting URL: https://spacex-app-1987e.web.app
